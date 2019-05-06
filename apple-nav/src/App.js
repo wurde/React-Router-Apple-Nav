@@ -1,25 +1,41 @@
-import React from 'react';
-import './App.css';
+'use strict'
+
+/**
+ * Dependencies
+ */
+
+const React = require('react')
+const react_router_dom = require('react-router-dom')
+const components = require('./components/index')
+
+/**
+ * Constants
+ */
+
+const BrowserRouter = react_router_dom.BrowserRouter
+
+/**
+ * Import component styles
+ */
+
+require('./App.scss')
+
+/**
+ * Define component
+ */
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="jsx-App">
+      <BrowserRouter>
+        <components.Navbar />
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+/**
+ * Export component
+ */
+
+module.exports = App
