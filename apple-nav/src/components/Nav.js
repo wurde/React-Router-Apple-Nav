@@ -5,16 +5,17 @@
  */
 
 const React = require('react')
+const styles = require('./styles/index')
 
 /**
  * Define component
  */
 
-function Navbar(props) {
+function Nav(props) {
   return (
-    <div>
+    <styles.NavStyle>
       {props.text}
-    </div>
+    </styles.NavStyle>
   )
 }
 
@@ -22,4 +23,4 @@ function Navbar(props) {
  * Export component
  */
 
-module.exports = Navbar
+module.exports = Nav
