@@ -73,6 +73,39 @@
   align-self: stretch;
 }
 
+
+.align-content-start {
+  align-content: flex-start;
+}
+.align-content-end {
+  align-content: flex-end;
+}
+.align-content-center {
+  align-content: space-between;
+}
+.align-content-around {
+  align-content: space-around;
+}
+.align-content-stretch {
+  align-content: stretch;
+}
+
+
+.flex-fill {
+  flex: 1 1 auto !important;
+}
+
+
+.flex-nowrap {
+  flex-wrap: nowrap !important;
+}
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse !important;
+}
+
 /**
  * Ordering of columns
  */

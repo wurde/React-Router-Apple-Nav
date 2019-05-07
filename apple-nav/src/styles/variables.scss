@@ -2,7 +2,7 @@
  * Reboot
  */
 
-$font-family-base:  Arial, Helvetica, sans-serif;
+$font-family-base:  Helvetica Neue, Helvetica, Arial, sans-serif;
 $font-size-base:    100%;
 $font-weight-base:  400;
 $line-height-base:  1.5;
@@ -19,6 +19,17 @@ $headings-font-family: inherit;
 $headings-font-weight: 500;
 $headings-line-height: 1.2;
 $headings-color: inherit;
+
+/**
+ * Border radius
+ */
+
+$rounded-0: 0px;
+$rounded-1: 1px;
+$rounded-2: 2px;
+$rounded-3: 5px;
+$rounded-4: 10px;
+$rounded-5: 15px;
 
 /*
   Grid
@@ -45,14 +56,31 @@ $container-max-width-xl: 1140px;
   Spacing
 */
 
-$padding-1: 0.25rem;
-$padding-2: 0.5rem;
-$padding-3: 1rem;
-$padding-4: 1.5rem;
-$padding-5: 3rem;
+$padding-sizes: (
+  0px,
+  0.25rem,
+  0.5rem,
+  1rem,
+  1.5rem,
+  3rem,
+);
+$margin-sizes: (
+  0px,
+  0.25rem,
+  0.5rem,
+  1rem,
+  1.5rem,
+  3rem,
+);
 
-$margin-1: 0.25rem;
-$margin-2: 0.5rem;
-$margin-3: 1rem;
-$margin-4: 1.5rem;
-$margin-5: 3rem;
+/**
+ * Colors
+ */
+
+$color-default: black;
+$color-success: green;
+$color-secondary: grey;
+$color-primary: blue;
+$color-info: light-blue;
+$color-warning: orange;
+$color-danger: red;
