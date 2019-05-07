@@ -13,6 +13,8 @@ const components = require('./components/index')
  */
 
 const BrowserRouter = react_router_dom.BrowserRouter
+const Route = react_router_dom.Route
+const HomePage = components.HomePage
 
 /**
  * Import component styles
@@ -26,11 +28,9 @@ require('./App.scss')
 
 function App() {
   return (
-    <div className="jsx-App">
-      <BrowserRouter>
-        <components.Navbar />
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Route to="/" component={HomePage} />
+    </BrowserRouter>
   )
 }
 

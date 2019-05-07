@@ -5,5 +5,5 @@
  */
 
 module.exports = {
-  Navbar: require('./Navbar'),
+  HomePage: require('./Home/HomePage'),
 }
