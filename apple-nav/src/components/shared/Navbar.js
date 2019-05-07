@@ -27,6 +27,7 @@ function Navbar(props) {
         <div className="row">
           <div className="col-12">
             <div className="container">
+
               <div className="row">
                 <div className="col-12 d-flex justify-content-between align-items-center">
                   <img src="logo.svg" width="45px" height="45px" />
@@ -44,21 +45,6 @@ function Navbar(props) {
                 </div>
               </div>
 
-              {/*
-              <div className="row">
-                <div className="col-12">
-                  <div className="styles-SubNavbar">
-                    <Route path="/mac" to={SubNavbar} />
-                    <Route path="/ipad" to={SubNavbar} />
-                    <Route path="/iphone" to={SubNavbar} />
-                    <Route path="/watch" to={SubNavbar} />
-                    <Route path="/tv" to={SubNavbar} />
-                    <Route path="/music" to={SubNavbar} />
-                    <a href="https://support.apple.com/" target="_blank">Support</a>
-                  </div>
-                </div>
-              </div>
-              */}
             </div>
           </div>
         </div>

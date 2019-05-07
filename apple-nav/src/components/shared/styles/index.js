@@ -5,6 +5,7 @@
  */
 
 module.exports = {
-  NavStyle: require('./NavStyle'),
   NavbarStyle: require('./NavbarStyle'),
+  NavStyle: require('./NavStyle'),
+  SubNavbarStyle: require('./SubNavbarStyle'),
 }

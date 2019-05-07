@@ -21,16 +21,19 @@ const SubNavbar = shared.SubNavbar
  */
 
 function HomePage(props) {
+  document.title = `${props.menu} - Apple`
+
   return (
     <div className="jsx-HomePage">
       <Navbar />
 
-      <Route path={`${props.match.path}/mac`} render={(props) => <SubNavbar {...props} menu="mac" />} />
-      <Route path={`${props.match.path}/ipad`} render={(props) => <SubNavbar {...props} menu="ipad" />} />
-      <Route path={`${props.match.path}/iphone`} render={(props) => <SubNavbar {...props} menu="iphone" />} />
-      <Route path={`${props.match.path}/watch`} render={(props) => <SubNavbar {...props} menu="watch" />} />
-      <Route path={`${props.match.path}/tv`} render={(props) => <SubNavbar {...props} menu="tv" />} />
-      <Route path={`${props.match.path}/music`} render={(props) => <SubNavbar {...props} menu="music" />} />
+      <Route path="/mac" render={(props) => <SubNavbar {...props} menu="mac" />} />
+      <Route path="/ipad" render={(props) => <SubNavbar {...props} menu="ipad" />} />
+      <Route path="/iphone" render={(props) => <SubNavbar {...props} menu="iphone" />} />
+      <Route path="/watch" render={(props) => <SubNavbar {...props} menu="watch" />} />
+      <Route path="/tv" render={(props) => <SubNavbar {...props} menu="tv" />} />
+      <Route path="/music" render={(props) => <SubNavbar {...props} menu="music" />} />
+      <Route path="/support" render={(props) => <SubNavbar {...props} menu="support" />} />
     </div>
   )
 }
