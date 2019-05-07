@@ -13,7 +13,7 @@ const React = require('react')
 function SubNavbar(props) {
   return (
     <div>
-      SubNavbar
+      SubNavbar: {props.menu}
     </div>
   )
 }

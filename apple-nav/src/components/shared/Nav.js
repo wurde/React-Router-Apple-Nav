@@ -6,6 +6,13 @@
 
 const React = require('react')
 const styles = require('./styles/index')
+const react_router_dom = require('react-router-dom')
+
+/**
+ * Constants
+ */
+
+const Link = react_router_dom.Link
 
 /**
  * Define component
@@ -14,7 +21,9 @@ const styles = require('./styles/index')
 function Nav(props) {
   return (
     <styles.NavStyle>
-      {props.text}
+      <Link to={props.path}>
+        {props.text}
+      </Link>
     </styles.NavStyle>
   )
 }

@@ -20,6 +20,10 @@ const NavStyle = styled.div(() => `
   padding: 10px 10px;
   color: #FFF;
 
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
   a:hover {
     opacity: .65;
   }

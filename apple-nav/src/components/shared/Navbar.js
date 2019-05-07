@@ -31,13 +31,13 @@ function Navbar(props) {
                 <div className="col-12 d-flex justify-content-between align-items-center">
                   <img src="logo.svg" width="45px" height="45px" />
 
-                  <Nav text="Mac" />
-                  <Nav text="iPad" />
-                  <Nav text="iPhone" />
-                  <Nav text="Watch" />
-                  <Nav text="TV" />
-                  <Nav text="Music" />
-                  <Nav text="Support" />
+                  <Nav path="mac" text="Mac" />
+                  <Nav path="ipad" text="iPad" />
+                  <Nav path="iphone" text="iPhone" />
+                  <Nav path="watch" text="Watch" />
+                  <Nav path="tv" text="TV" />
+                  <Nav path="music" text="Music" />
+                  <Nav path="support" text="Support" />
 
                   <img src="search.svg" width="45px" height="45px" />
                   <img src="cart.svg" width="45px" height="45px" />

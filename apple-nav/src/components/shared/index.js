@@ -6,4 +6,5 @@
 
 module.exports = {
   Navbar: require('./Navbar'),
+  SubNavbar: require('./SubNavbar'),
 }
